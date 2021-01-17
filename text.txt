@@ -1,0 +1,4 @@
+14e79849092b4e6da8d003d3f038e435
+
+proxy server for Api
+http://cors-anywhere.herokuapp.com/
