@@ -1,7 +1,7 @@
 let Home=()=>{
 
 const xhr = new XMLHttpRequest();
-xhr.open("GET",'http://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=en&domains=techcrunch.com,thenextweb.com&apiKey=14e79849092b4e6da8d003d3f038e435', true);
+xhr.open("GET",'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=en&domains=techcrunch.com,thenextweb.com&apiKey=14e79849092b4e6da8d003d3f038e435', true);
 
 let element=document.getElementById('fullbody')
 element.innerHTML=`<h1 class="centerText"><span>WELCOME TO</span><br> <span>THE PAGE</span></h1>`
