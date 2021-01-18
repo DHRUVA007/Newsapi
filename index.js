@@ -18,7 +18,7 @@ xhr.onload = function () {
         let newhtml=`<div>
 
         <div class="posts">
-                        <h1 class="content-subhead">Post Number${i}</h1>
+                        <h1 class="content-subhead">Post Number ${i}</h1>
 
                 <!-- A single blog post -->
             <section class="post">
@@ -75,8 +75,57 @@ element.innerHTML=newhtml2 +`
         }
     }
     else {
-        console.log("Some error occured")
-    }
+        
+
+                        const data = null;
+                        let mlo = document.getElementById('fullbody')
+                        const xhr = new XMLHttpRequest();
+                        let newhtml1=''; 
+                        
+                        xhr.onload = function () {
+                            if (this.status === 200) {
+                                let jsn =JSON.parse(this.responseText);
+                                
+                              
+                            //.title
+                            //competition.name
+                            for(let i=0;i<10;i++){
+
+             newhtml=`<div>
+             
+           
+                            <div class="posts">
+                                            <h1 class="content-subhead">${jsn[i].title} : $${jsn[i].competition.name}</h1>
+                    
+                                    <!-- A single blog post -->
+                                <section class="post">
+                                    <header class="post-header">
+                                    ${jsn[i].embed}
+                    
+                                        
+                    
+                                        
+                                    </header>
+                    
+                                    
+                                </section>
+                            </div>
+                        </div>    
+                            `
+                    
+                    newhtml1= newhtml1 + newhtml
+                    mlo.innerHTML= `<h2 class="post-title">Latest Football News</h2>` + newhtml1;   
+                                                        }
+                                    }
+                        }
+                            
+                        xhr.open("GET", "https://free-football-soccer-videos.p.rapidapi.com/");
+                        xhr.setRequestHeader("x-rapidapi-key", "ef3cfb755fmshc26dde9213c6781p1e6fe0jsnba6ab4f9689e");
+                        xhr.setRequestHeader("x-rapidapi-host", "free-football-soccer-videos.p.rapidapi.com");
+                        
+                        xhr.send(data);
+                        
+                    }
 }
 
 xhr.send()
