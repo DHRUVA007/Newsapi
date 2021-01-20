@@ -201,6 +201,37 @@ h1{font-family: 'Odibee Sans', cursive;
    background-color:  hsl(168, 100%, 50%);
    clip-path: polygon(0 41%, 100% 0%, 100% 100%, 0% 100%);
 }
+.text-typing {
+    padding:20px 30px;
+    
+    word-wrap: break-word;
+    font-size:1em;
+    font-family:monospace;
+    border-radius:50px;
+  }
+  .text-typing p { font-size: 1.5em;
+    
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    
+    animation:typing 4s steps(22,end) forwards,
+              blink 1s infinite;
+              
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #222;
+    }
+  }
+  
 
 
 
