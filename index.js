@@ -4,7 +4,7 @@ const xhr = new XMLHttpRequest();
 xhr.open("GET",'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=en&domains=techcrunch.com,thenextweb.com&apiKey=14e79849092b4e6da8d003d3f038e435', true);
 
 let element=document.getElementById('fullbody')
-element.innerHTML=`<h1 class="centerText"><span>WELCOME TO</span><br> <span>THE PAGE</span><br> <hr><br>
+element.innerHTML=`<h1 class="centerText"><span>WELCOME TO</span><br> <span>THE PAGE</span><br> <br><br><hr><br>
                 <div class="text-typing">
                 It will take 1- 2 minutes, data to be fetched from all over the world<br><br>
                 <hr><br>
