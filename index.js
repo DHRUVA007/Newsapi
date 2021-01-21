@@ -109,7 +109,7 @@ element.innerHTML=newhtml2 +`
                                     <!-- A single blog post -->
                                 <section class="post">
                                     <header class="post-header">
-                                    ${jsn[i].embed}
+                                    ${jsn[i].embed}<hr>
                     
                                         
                     
