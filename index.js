@@ -49,7 +49,7 @@ xhr.onload = function () {
             </section>
         </div>
 
-
+                  <script data-ad-client="ca-pub-5723760164918661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <section class="post">
 
